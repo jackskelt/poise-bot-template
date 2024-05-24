@@ -1,0 +1,7 @@
+{
+    "rust-analyzer.server.path": "rust-analyzer",
+    "[rust]": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "rust-lang.rust-analyzer"
+    }
+}

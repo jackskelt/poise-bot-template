@@ -1,0 +1,19 @@
+[package]
+name = "poise-bot-template"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chrono = "0.4"
+poise = "0.6.1"
+serenity = { version = "0.12.1", features = ["model"] }
+tokio = { version = "1.37", features = ["macros", "rt-multi-thread"]}
+tracing = "0.1"
+tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
+serde = "1"
+
+[build-dependencies]
+built = { version = "0.7", features = ["chrono", "dependency-tree"]}
